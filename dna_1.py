@@ -55,28 +55,60 @@ new_valid_dna_sequence_1= [ ]
 for element in user_dna_sequence[0][2]:
     if element in dna_elements and (element not in invalid_dna):
         new_valid_dna_sequence_1.append(element)
-print("Name:",user_dna_sequence[0][0],",","Age=",user_dna_sequence[0][1],",","New_DNA_Sequence=", new_valid_dna_sequence_1)
+
 
 new_valid_dna_sequence_2= [ ]
 
 for element in user_dna_sequence[1][2]:
     if element in dna_elements and (element not in invalid_dna):
         new_valid_dna_sequence_2.append(element)
-print("Name:",user_dna_sequence[1][0],",","Age=",user_dna_sequence[1][1],",","New_DNA_Sequence=", new_valid_dna_sequence_2)
+
 
 new_valid_dna_sequence_3= [ ]
 
 for element in user_dna_sequence[2][2]:
     if element in dna_elements and (element not in invalid_dna):
         new_valid_dna_sequence_3.append(element)
-print("Name:",user_dna_sequence[2][0],",","Age=",user_dna_sequence[2][1],",","New_DNA_Sequence=", new_valid_dna_sequence_3)
+
 
 new_valid_dna_sequence_4= [ ]
 
 for element in user_dna_sequence[3][2]:
     if element in dna_elements and (element not in invalid_dna):
         new_valid_dna_sequence_4.append(element)
-print("Name:",user_dna_sequence[3][0],",","Age=",user_dna_sequence[3][1],",","New_DNA_Sequence=", new_valid_dna_sequence_4)
+
+
+valid_dna_1=" "
+
+for element in new_valid_dna_sequence_1:
+    valid_dna_1 += element
+#print(valid_dna_1)
+
+
+valid_dna_2=" "
+
+for element in new_valid_dna_sequence_2:
+    valid_dna_2 += element
+#print(valid_dna_2)
+
+
+valid_dna_3=" "
+
+for element in new_valid_dna_sequence_3:
+    valid_dna_3 += element
+#print(valid_dna_3)
+
+
+valid_dna_4=" "
+
+for element in new_valid_dna_sequence_4:
+    valid_dna_4 += element
+#print(valid_dna_4)
+
+print("Name:",user_dna_sequence[0][0],",","Age=",user_dna_sequence[0][1],",","New_DNA_Sequence="+valid_dna_1)
+print("Name:",user_dna_sequence[1][0],",","Age=",user_dna_sequence[1][1],",","New_DNA_Sequence="+valid_dna_2)
+print("Name:",user_dna_sequence[2][0],",","Age=",user_dna_sequence[2][1],",","New_DNA_Sequence="+valid_dna_3)
+print("Name:",user_dna_sequence[3][0],",","Age=",user_dna_sequence[3][1],",","New_DNA_Sequence="+valid_dna_4)
 
 
 
